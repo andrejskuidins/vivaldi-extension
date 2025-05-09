@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Vivaldi Auto Tab Grouping",
+  "version": "1.0",
+  "description": "Automatically stacks Vivaldi tabs based on hostnames and config.",
+  "permissions": [
+    "tabs",
+    "tabGroups",
+    "webNavigation",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Auto Tab Grouper"
+  }
+}
