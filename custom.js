@@ -53,7 +53,7 @@
         try {
             return vivaldi.utilities.getUrlFragments(url);
         } catch (e) {
-            console.error('Error in getUrlFragments:', e);
+            // console.error('Error in getUrlFragments:', e);
             // Fallback implementation if vivaldi.utilities.getUrlFragments is not available
             const urlObj = new URL(url);
             const hostParts = urlObj.hostname.split('.');
